@@ -26,9 +26,9 @@ class Location(models.Model):
         self.save()
 
 class Image(models.Model):
+    image = models.ImageField(upload_to='index/')
     image_name = models.CharField(max_length =30,default='random')
     image_description = models.TextField()
-    image_path = models.ImageField(upload_to = 'gallery/')
     image_location = models.ForeignKey(Location)
     image_category = models.ForeignKey(Category)
 
@@ -53,9 +53,9 @@ class Image(models.Model):
         return new_instance
 
     @classmethod
-    def get_image_by_id(cls,new_id):
-        image_result = cls.objects.get(id=new_id)
-        return image_result
+    def get_image_by_id(cls):
+        images= cls.objects.get(pk=id)
+        return images
 
     @classmethod
     def search_by_location(cls,search_term):

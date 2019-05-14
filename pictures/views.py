@@ -1,14 +1,19 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
-from .models import Image,Category,Location
+from .models import Image
 
 
 # Create your views here.
 
-def start(request):
+# def start(request):
 
-    index_images = Image.objects.all()
-    return render(request,'index.html', {'index_images':index_images})
+#     index_images = Image.objects.all()
+#     return render(request,'index.html', {'index_images':index_images})
+
+def index(request):
+
+    images = Image.objects.all()
+    return render(request, 'index.html', {'images': images})
 
 def search_results(request):
 

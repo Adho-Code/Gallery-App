@@ -17,13 +17,13 @@ def index(request):
 
 def search_results(request):
 
-    if 'category' in request.GET and request.GET["category"]:
-        search_term = request.GET.get("category")
+    if 'image_category' in request.GET and request.GET["image_category"]:
+        search_term = request.GET.get("image_category")
         searched_image = Image.search_by_category(search_term)
         message = f"{search_term}"
 
-        return render(request, 'index.html',{"message":message,"index_images": searched_image})
+        return render(request, 'search.html',{"message":message,"index_images": searched_image})
 
     else:
         message = "You haven't searched for any term"
-        return render(request, 'index.html',{"message":message})
+        return render(request, 'search.html',{"message":message})

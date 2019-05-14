@@ -13,13 +13,17 @@
 
   <div class="row">
 
-  {% if categorys %}
-    {% for category in categorys %}
+  
+    {% for image in index_images %}
       <div class="col-sm-6 col-md-3">
-          <h1>{{category.image_category}}</h1>
+          <h1>{{image.image_name}}</h1>
+     
+         
+          <img src="{{image.image.url}}" alt="{{image.image.url}}">
+          <p>{{image.image_location}}</p>
       </div>
     {% endfor %}
-  {% endif %}
+  
   </div>
 </div>
 {% endblock %}

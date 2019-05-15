@@ -41,12 +41,13 @@ or just use this
 
 
 ## BDD
-|Behavior|	|Result|
-|User loads the page|	|All favorite images are displayed|
-|User clicks on an image that interests him/her|	|The image is enlarged in a modal and its Description and a button for copping image is shown|
-|User clicks on the copy link button|	|The image url is copied and an alert is displayed|
-|User searches for an image category|	|User is re-directed to the searched term with relevant images displayed|
-|User clicks on location|	|A dropdown menu is displayed|
+| Behavior                                       | Result                                                                                       |
+|------------------------------------------------|----------------------------------------------------------------------------------------------|
+| User loads the page                            | All favorite images are displayed                                                            |
+| User clicks on an image that interests him/her | The image is enlarged in a modal and its Description and a button for copping image is shown |
+| User clicks on the copy link button            | The image url is copied and an alert is displayed                                            |
+| User searches for an image category            | User is re-directed to the searched term with relevant images displayed                      |
+| User clicks on location                        | A dropdown menu is displayed                                                                 |
 
 
 ## Live link

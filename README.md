@@ -13,36 +13,36 @@ Python 3.6
 Django 1.11
 
 ## Application requirements
-Ensure you have Python3.6 installed in your computer. you can download it by running this command
+* Ensure you have Python3.6 installed in your computer. you can download it by running this command
 $ sudo apt-get update sudo apt-get install python3.6.
 
-Ensure you have PiP installed in your computer, you can download it by running this command:
-$ python get-pip.py
+* Ensure you have PiP installed in your computer, you can download it by running this command:
+`$ python get-pip.py`
 
-set up a virtual environment using the following command;
-$ python3.6 -m venv --without-pip virtual
+* set up a virtual environment using the following command;
+`$ python3.6 -m venv --without-pip virtual`
 
-Run the following command to install all your dependencies in your local computer;
-$ pip install -r requirements.txt
+* Run the following command to install all your dependencies in your local computer;
+`$ pip install -r requirements.txt`
 
-Project setup instruction/ installations
-From the repository, click + in the global sidebar and select Clone this repository .
+## Project setup instruction/ installations
+* From the repository, click + in the global sidebar and select Clone this repository .
 
 Copy the clone command.
 
-From a terminal window, change to the local directory where you want to clone your repository.
+* From a terminal window, change to the local directory where you want to clone your repository.
 
 or just use this
 
-$ git clone 
+`$ git clone `
 
-Run this command to open the app
-$ python3.6 manage.py runserver
-
-
+# Run this command to open the app
+`$ python3.6 manage.py runserver`
 
 
-Live link
+
+
+## Live link
 Use this link to see the web-page
 
 

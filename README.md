@@ -14,7 +14,7 @@ Django 1.11
 
 ## Application requirements
 * Ensure you have Python3.6 installed in your computer. you can download it by running this command
-$ sudo apt-get update sudo apt-get install python3.6.
+`$ sudo apt-get update sudo apt-get install python3.6`.
 
 * Ensure you have PiP installed in your computer, you can download it by running this command:
 `$ python get-pip.py`
@@ -40,6 +40,13 @@ or just use this
 `$ python3.6 manage.py runserver`
 
 
+## BDD
+|Behavior|	|Result|
+|User loads the page|	|All favorite images are displayed|
+|User clicks on an image that interests him/her|	|The image is enlarged in a modal and its Description and a button for copping image is shown|
+|User clicks on the copy link button|	|The image url is copied and an alert is displayed|
+|User searches for an image category|	|User is re-directed to the searched term with relevant images displayed|
+|User clicks on location|	|A dropdown menu is displayed|
 
 
 ## Live link
@@ -47,11 +54,11 @@ Use this link to see the web-page
 
 
 
-Contact Information
-Email-(adhoadhigal@gmail.com)
-Contacts-0748393309
+## Contact Information
+* Email-(adhoadhigal@gmail.com)
+* Contacts-0748393309
 
-License
+## License
 MIT License
 
 Copyright (c) [2019] [Adho Galgallo]

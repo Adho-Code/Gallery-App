@@ -49,7 +49,7 @@
 
             <div class="modal-footer">
                 
-                <button name="button" value="https://chuu.herokuapp.com{{post.image.url}}"onclick="copyImage(this.value)">Copy Link</button>
+                <button name="button" value="https://chuugallery.herokuapp.com{{post.image.url}}"onclick="copyImage(this.value)">Copy Link</button>
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -57,15 +57,4 @@
 </div>
 {% endfor %}
 
-<script>
-    function copyImage(value){
-        function handler(event){
-            event.clipboardData.setData('text/plain', value);
-            event.preventDefault();
-            document.removeEventListner('copy', handler, true);
-        }
-    document.addEventListner('copy',handler,true);
-    document.execcommand('copy');
-    }
-</script>
 {% endblock %}

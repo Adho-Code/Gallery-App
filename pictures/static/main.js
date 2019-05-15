@@ -5,5 +5,5 @@ function copyImage(value){
         document.removeEventListner('copy', handler, true);
     }
 document.addEventListner('copy', handler, true);
-document.execcommand('copy');
+document.execCommand('copy');
 }

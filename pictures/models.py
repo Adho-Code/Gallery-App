@@ -38,8 +38,8 @@ class Image(models.Model):
     def save_image(self):
         self.save()
 
-    def delete_image(self):
-        self.delete()
+    class Meta:
+        ordering = ['image_name']
 
     @classmethod
     def search_by_category(cls,search_term):
